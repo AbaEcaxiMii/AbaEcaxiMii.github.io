@@ -1,6 +1,15 @@
-p {
-  font-family: 'Deltarune';
-  src: url('caminho/para/a/fonte.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+@font-face {
+    font-family: 'Determination Sans';
+    src: url('fonts/DeterminationSansWebRegular-369X.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Determination Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Determination Sans', cursive;
 }
