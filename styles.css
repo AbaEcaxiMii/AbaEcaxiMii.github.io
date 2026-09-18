@@ -1,15 +1,112 @@
 @font-face {
-    font-family: 'Determination Sans';
-    src: url('fonts/DeterminationSansWebRegular-369X.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    font-family: determination;
+    src: url(fontes/DeterminationSansWebRegular-369X.ttf);
+
+}
+
+@font-face {
+    font-family: deltarune_logo;
+    src: url(fontes/deltarune.ttf);
+
 }
 
 body {
-    font-family: 'Determination Sans', sans-serif;
+  font-family: determination;
+  background-image: url('imagens/deltarune_background.gif');
+  background-repeat: repeat;
 }
 
-h1, h2 {
-    font-family: 'Determination Sans', cursive;
+.titulo{
+    font-family: deltarune_logo;
+    color: darkslategray;
+    text-align:center;
+    border-bottom: 10px dotted purple;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    padding: 10px;
+    border-bottom: 10px dotted slateblue;
+}
+
+.box {
+    margin: 10px;
+    width: 150px;
+    /* sem height */
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute; /* uma em cima da outra */
+}
+
+.item_desc {
+    border: 2px solid blueviolet;
+    padding: 10px;
+    background-color: rgba(138, 43, 226, 0.7); /*RED GREEN BLUE OPACIDADE*/
+}
+
+.item_titulo{
+    background: linear-gradient(45deg,blueviolet,slateblue);
+    background-clip: text;
+    -webkit-background-clip: text; /* Recorta o fundo no formato das letras */
+    -webkit-text-fill-color: transparent; /* Faz a cor padrão do texto sumir */
+    color: transparent;
+}
+
+.item {
+    display: flex;
+    align-items: center; /* centraliza verticalmente a img e o texto */
+    gap: 8px;            /* espaço entre a imagem e o texto */
+}
+
+.stats {
+    font-family: courier;
+    text-align: center;
+    margin: 0; /* tira a margem padrão do <p> */
+}
+
+.box .spr_special {
+    display: none;
+     /* mantém a proporção */
+}
+
+/* No hover, inverte */
+.box:hover .spr_normal {
+    display: none;
+}
+
+.box:hover .spr_special {
+    display: block;
+}
+
+/*Variações para cada personagem*/
+.container[class^="blue"]{
+    border-bottom: 10px dotted aqua;
+}
+
+.box[class^="blue"]{
+    background-color: slateblue;
+}
+
+.item_titulo[class^="blue"]{
+    background: linear-gradient(45deg, slateblue, aqua);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.item_desc[class^="blue"] {
+    border: 2px solid slateblue;
+    background-color: rgba(106, 90, 205, 0.7); /*RED GREEN BLUE OPACIDADE*/
 }
