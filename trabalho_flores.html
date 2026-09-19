@@ -4,22 +4,62 @@
 <title>Dados dos itens das flores</title>
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="pag_principal_fundo">
 
-<h1 class="titulo">ITENS DAS FLORES</h1>
+<h1 class="titulo">Bem vindo aos dados dos itens das flores</h1>
+<h1 class="titulo">Leia <a href="sobre.html" target="_self">sobre</a> ou <a href="sobre.html" target="_self">mande uma mensagem</a></h1>
 
-<!--TESTEEE -->
+<div class="blocos_flores">
+    <h1 class="titulo_simples">Informações e comentários</h1>
+
+<!-- Bloco da Aqua -->
+
+<div class="aqua container">
+    <div class="aqua box">
+        <img class="spr_normal" src="imagens/Aqua_overworld.png" alt="aqua">
+        <img class="spr_special" src="imagens/Aqua_battle_idle.gif" alt="aqua dançando">
+    </div>
+
+    <div class="aqua item_desc">
+
+        <div class="item">
+            <h1 class="aqua item_titulo"><i>AquaKnife/Faca Aqua</i></h1>
+            <img src="imagens/FIGHT_icon.png" alt="fight icon">
+        </div>
+
+        <p>
+            <b>Facilita a realização de críticos.</b><br> Uma ótima escolha para uma rota agressiva,
+            pois permite que Kris atinja danos semelhantes aos da Susie. Contudo, essa arma é completamente
+            superada pelo BlackShard em questão de status, tornando o seu benefício crítico irrelevante. Assim,
+            acaba sendo uma das armas menos escolhidas, por ser inútil em uma rota pacifista e já ser facilmente
+            substituível no capítulo 3.
+        </p>
+
+        <div class="item">
+            <img title="Obrigado por assistir meu sonho!"
+                src="imagens/AquaKnife_item.png" alt="Faca Aqua">
+            <p class="stats">
+                <i>+10AT<br>+2DF</i>
+            </p>
+            <img src="imagens/12px-Up_icon.webp" alt="up icon">
+            <p><i>Critical</i></p>
+            <img src="imagens/Kris_face_battlemenu.png">
+        </div>
+    </div>
+</div>
+
+<!--Bloco de seth -->
 <div class="seth container">
     <div class="seth box">
         <img class="spr_normal" src="imagens/Seth_overworld.png" alt="Seth">
-        <img class="spr_special" src="imagens/Seth-dancing.gif" alt="Seth dançando" width="50" height="auto">
+        <img class="spr_special" src="imagens/Seth_battle_dance.gif" alt="Seth dançando">
     </div>
 
     <div class="seth item_desc">
 
         <div class="item">
             <h1 class="seth item_titulo"><i>SethSpecs/Óculos do Seth</i></h1>
-            <img src="imagens/DEFEND_icon.webp" alt="defend icon">
+            <img src="imagens/DEFEND_icon.png" alt="defend icon">
         </div>
         <p>
             <b>Aumenta o tempo de invulnerabilidade após sofrer dano.</b><br>
@@ -37,6 +77,8 @@
             <p class="stats">
                 <i>+4DF<br>+6 Magic</i>
             </p>
+            <img src="imagens/12px-Magic_icon.webp" alt="magic icon">
+            <p><i>InvTime+</i></p>
             <img src="imagens/Kris_face_battlemenu.png">
             <img src="imagens/Susie_face_battlemenu.png">
             <img src="imagens/Ralsei_face_battlemenu.png">
@@ -44,11 +86,10 @@
     </div>
 </div>
 
-<!--TESTEEE2 -->
+<!-- Bloco do Blue -->
 
 <div class="blue container">
     <div class="blue box">
-        <!-- MUDARRR os sprites-->
         <img class="spr_normal" src="imagens/Blue_overworld.png" alt="Blue">
         <img class="spr_special" src="imagens/Blue_battle_idle.gif" alt="Blue dançando">
     </div>
@@ -57,7 +98,7 @@
 
         <div class="item">
             <h1 class="blue item_titulo"><i>BlueShoes/Sapatilhas Azuis</i></h1>
-            <img src="imagens/FIGHT_icon.webp" alt="fight icon">
+            <img src="imagens/FIGHT_icon.png" alt="fight icon">
         </div>
         <p>
             <b>Anula o custo da magia de Pacify.</b><br> Uma excelente escolha para Ralsei em ambas as rotas.
@@ -72,88 +113,130 @@
             <p class="stats">
                 <i>+2AT<br>+4DF<br>+6 Magic</i>
             </p>
+            <img src="imagens/12px-Sleep_icon.webp" alt="sleep icon">
+            <p><i>Pacify0TP</i></p>
             <img src="imagens/Ralsei_face_battlemenu.png">
         </div>
     </div>
 </div>
 
-<!--TESTEEE2 -->
+<!-- Bloco do yellow -->
 
-<!--Seth-->
-<h1 style="background-color:blueviolet;">SethSpecs/Óculos do Seth<br>(Armadura)</h1>
+<div class="yellow container">
+    <div class="yellow box">
+        <img class="spr_normal" src="imagens/Yellow_overworld.png" alt="yellow">
+        <img class="spr_special" src="imagens/Yellow_battle_idle.gif" alt="yellow dançando">
+    </div>
 
-<img title="Obrigado... por assistir meu sonho." src="imagens/SethSpecs_item.png" alt="Óculos do Seth">
+    <div class="yellow item_desc">
 
-<p style="border: 2px solid blueviolet;">
-<b>Aumenta o tempo de invulnerabilidade após sofrer dano.</b><br> Claramente, essa armadura tem uma tendência defensiva, além de oferecer uma boa quantidade de magia, o que permite uma cura mais eficiente. Infelizmente, apesar da maior invencibilidade, a defesa deixa a desejar. Afinal, por ser uma armadura, ela acaba competindo com outras opções que, embora não concedam tanta magia, possuem uma defesa mais aceitável. Isso faz com que muitos jogadores não considerem que o item valha a pena.
-</p>
+        <div class="item">
+            <h1 class="yellow item_titulo"><i>YellowHat/Chapéu amarelo</i></h1>
+            <img src="imagens/DEFEND_icon.png" alt="defend icon">
+        </div>
 
-<p style="font-family:courier; text-align:center;"><i>+4DF<br>+6 Magic</i></p>
+        <p>
+            <b>Aumenta em 20% o poder de magias curativas e em 10% o de magias agressivas.</b><br>
+            Seu aumento percentual nas magias (que é bem mais efetivo do que simplesmente adicionar pontos de magia)
+            compensa seus status equilibrados, embora não especialmente bons em nada. Sem dúvidas, é uma ótima escolha
+            independente da rota.
+        </p>
 
-<!--Blue-->
-<h1 style="background-color:slateblue;">BlueShoes/Sapatilhas Azuis<br>(Arma para Ralsei)</h1>
+        <div class="item">
+            <img title="Obrigado por assisti meu sonho, sô."
+                src="imagens/YellowHat_item.png" alt="Chapéu amarelo">
+            <p class="stats">
+                <i>+4AT<br>+4DF<br>+4 Magic</i>
+            </p>
+            <img src="imagens/12px-Up_icon.webp" alt="up icon">
+            <p><i>Skill20%</i></p>
+            <img src="imagens/Kris_face_battlemenu.png">
+            <img src="imagens/Susie_face_battlemenu.png">
+            <img src="imagens/Ralsei_face_battlemenu.png">
+            <img src="imagens/Noelle_face_battlemenu.png">
+        </div>
+    </div>
+</div>
 
-<img title="Obrigado por assistir nosso sonho."
-src="imagens/BlueShoes_item.png" alt="Sapatilhas Azuis">
+<!-- Bloco da orange -->
 
-<p style="border: 2px solid slateblue;">
-<b>Anula o custo da magia de Pacify.</b><br> Uma excelente escolha para Ralsei em ambas as rotas. Seu efeito permite pacificar inimigos em significativamente menos turnos e aumenta bastante a efetividade de sua cura. Ele também tem uma defesa baixa, assim como os Óculos de Seth, porém, por ser uma arma, que normalmente não oferecem muita defesa, esse fator não tem tanta importância.
-</p>
+<div class="orange container">
+    <div class="orange box">
+        <img class="spr_normal" src="imagens/Orange_battle_idle.gif" alt="orange">
+        <img class="spr_special" src="imagens/Orange_overworld_stick_tongue_out.gif" alt="orange dançando">
 
-<p style="font-family:courier; text-align:center;"><i>+2AT +4DF +6 Magic</i></p>
+    </div>
 
-<!--Aqua-->
-<h1 style="background-color:aqua;">AquaKnife/Faca Aqua<br>(Arma para Kris)</h1>
+    <div class="orange item_desc">
 
-<img title="Obrigado por assistir meu sonho!"
-src="imagens/AquaKnife_item.png" alt="Faca Aqua">
+        <div class="item">
+            <h1 class="orange item_titulo"><i>Orange Gloves/Luvas laranjas</i></h1>
+            <img src="imagens/DEFEND_icon.png" alt="defend icon">
+        </div>
 
-<p style="border: 2px solid aqua;">
-<b>Facilita a realização de críticos.</b><br> Uma ótima escolha para uma rota agressiva, pois permite que Kris atinja danos semelhantes aos da Susie. Contudo, essa arma é completamente superada pelo BlackShard em questão de status, tornando o seu benefício crítico irrelevante. Assim, acaba sendo uma das armas menos escolhidas, por ser inútil em uma rota pacifista e já ser facilmente substituível no capítulo 3.
-</p>
+        <p>
+            <b>Diminui o custo da magia Scythemare da Susie de 40% para 20%.</b><br> Essas luvas virtualmente lhe
+            concedem uma versão turbinada do <i>pacificar</i> pelo mesmo preço e, de brinde, oferecem a maior
+            quantidade de defesa do jogo inteiro (até o momento). Infelizmente, não são tão úteis se você não usa
+            essa magia com frequência ou se joga de forma agressiva. Caso contrário, são uma escolha imbatível.
+        </p>
 
-<p style="font-family:courier; text-align:center;"><i>+10AT
-+2DF</i></p>
+        <div class="item">
 
-<!--Yellow-->
-<h1 style="background-color:Gold;">YellowHat/Chapéu amarelo<br>(Armadura)</h1>
+            <img title="O... Obrigado por assistir meu sonho."
+                src="imagens/O.Glove_item.png" alt="Luvas laranjas">
+            <p class="stats">
+                <i>+4AT<br>+8DF</i>
+            </p>
+            <img src="imagens/12px-Down_icon.webp" alt="down icon">
+            <p><i>ScytheTP-</i></p>
+            <img src="imagens/Susie_face_battlemenu.png">
+            <img src="imagens/Noelle_face_battlemenu.png">
+        </div>
+    </div>
+</div>
 
-<img title="Obrigado por assisti meu sonho, sô."
-src="imagens/YellowHat_item.png" alt="Chapéu amarelo">
+<!-- Bloco de green -->
 
-<p style="border: 2px solid Gold;">
-<b>Aumenta em 20% o poder de magias curativas e em 10% o de magias agressivas.</b><br> Seu aumento percentual nas magias (que é bem mais efetivo do que simplesmente adicionar pontos de magia) compensa seus status equilibrados, embora não especialmente bons em nada. Sem dúvidas, é uma ótima escolha independente da rota.
-</p>
+<div class="green container">
+    <div class="green box">
+        <img class="spr_normal" src="imagens/Green_overworld.png" alt="green">
+        <img class="spr_special" src="imagens/Green_overworld_wave.gif" alt="green dançando">
 
-<p style="font-family:courier; text-align:center;"><i>+4AT +4DF +4 Magic</i></p>
+    </div>
 
-<!--Orange-->
-<h1 style="background-color:Orange;">Orange Gloves/Luvas laranjas<br>(Armadura)</h1>
+    <div class="green item_desc">
 
-<img title="O... Obrigado por assistir meu sonho."
-src="imagens/O.Glove_item.png" alt="Luvas laranjas">
+        <div class="item">
+            <h1 class="green item_titulo"><i>GreenApron/Avental verde</i></h1>
+            <img src="imagens/DEFEND_icon.png" alt="defend icon">
+        </div>
 
-<p style="border: 2px solid Orange;">
-<b>Diminui o custo da magia Scythemare da Susie de 40% para 20%.</b><br> Essas luvas virtualmente lhe concedem uma versão turbinada do <i>pacificar</i> pelo mesmo preço e, de brinde, oferecem a maior quantidade de defesa do jogo inteiro (até o momento). Infelizmente, não são tão úteis se você não usa essa magia com frequência ou se joga de forma agressiva. Caso contrário, são uma escolha imbatível.
-</p>
+        <p>
+            <b>Recupera um pouco de HP ao defender (16% do HP máximo).</b><br>Oferece a segunda maior quantidade
+            de defesa do jogo, perdendo por apenas um ponto para a primeira, além de proporcionar uma cura
+            praticamente de graça, sem apresentar nenhum peso ou desvantagem em contrapartida. Esse avental é
+            essencial independentemente da sua rota, você sempre vai pegar esse.
+        </p>
 
-<p style="font-family:courier; text-align:center;"><i>+4AT
-+8DF</i></p>
+        <div class="item">
 
-<!--Green-->
-<h1 style="background-color:LimeGreen;">GreenApron/Avental verde<br>(Armadura)</h1>
+            <img title="(Obrigado por assistir o sonho delu)"
+                src="imagens/GreenApron_item.png" alt="Avental verde">
+            <p class="stats">
+                <i>+7DF</i>
+            </p>
+            <img src="imagens/12px-Magic_icon.webp" alt="magic icon">
+            <p><i>DefendHeal</i></p>
+            <img src="imagens/Kris_face_battlemenu.png">
+            <img src="imagens/Susie_face_battlemenu.png">
+            <img src="imagens/Ralsei_face_battlemenu.png">
+            <img src="imagens/Noelle_face_battlemenu.png">
+        </div>
+    </div>
+</div>
 
-<img title="(Obrigado por assistir o sonho delu)"
-src="imagens/GreenApron_item.png" alt="Avental verde">
+</div>
 
-<p style="border: 2px solid LimeGreen;">
-<b>Recupera um pouco de HP ao defender (16% do HP máximo).</b><br>Oferece a segunda maior quantidade de defesa do jogo, perdendo por apenas um ponto para a primeira, além de proporcionar uma cura praticamente de graça, sem apresentar nenhum peso ou desvantagem em contrapartida. Esse avental é essencial independentemente da sua rota, você sempre vai pegar esse.
-</p>
-
-<p style="font-family:courier; text-align:center;"><i>+7DF</i></p>
-
-<!--Final da página-->
-<p><i>Passe o mouse nos equipamentos para ouvir sua gratidão</i></p>
-<a href="https://deltarune.wiki/w/Flower_item" target="_blank">site fonte das informações</a>
 </body>
 </html>

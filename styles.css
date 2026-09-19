@@ -10,17 +10,49 @@
 
 }
 
-body {
+body.pag_principal_fundo {
   font-family: determination;
-  background-image: url('imagens/deltarune_background.gif');
-  background-repeat: repeat;
+  margin: 0;
+  min-height: 100vh;
+
+  background-image:
+    url('imagens/sunrise-deltarune.960x540.gif'),
+    url('imagens/deltarune_background.gif');
+
+  background-repeat: no-repeat, repeat;
+  background-position: top center, top left;
+  background-size: 100% auto, auto;
+}
+
+body.pag_sobre_fundo {
+  font-family: determination;
+  margin: 0;
+
+  background-image: url('imagens/sunrise-deltarune.960x540.gif');
+  background-repeat: repeat-y;        /* repete só na vertical */
+  background-position: top center;    /* começa no topo, centralizado */
+  background-size: 100% auto;         /* 100% da largura, altura proporcional */
+}
+
+.links_logo{
+    font-family: deltarune_logo;
+}
+
+.blocos_flores{
+    margin-top: 50vw /*100vw = largura total da tela; 540/960 = 0.5625 -> a altura é 56.25% da largura, mas coloco um pouco menos para ficar mais bonito */
 }
 
 .titulo{
     font-family: deltarune_logo;
     color: darkslategray;
     text-align:center;
-    border-bottom: 10px dotted purple;
+}
+
+.titulo_simples{
+    font-family: determination;
+    color: orange;
+    text-align:center;
+    border-bottom: 10px dotted aqua;
 }
 
 .container {
@@ -28,7 +60,6 @@ body {
     align-items: stretch;
     gap: 16px;
     padding: 10px;
-    border-bottom: 10px dotted slateblue;
 }
 
 .box {
@@ -52,7 +83,7 @@ body {
 .item_desc {
     border: 2px solid blueviolet;
     padding: 10px;
-    background-color: rgba(138, 43, 226, 0.7); /*RED GREEN BLUE OPACIDADE*/
+    background-color: rgba(138, 43, 226, 0.5); /*RED GREEN BLUE OPACIDADE*/
 }
 
 .item_titulo{
@@ -90,6 +121,52 @@ body {
 }
 
 /*Variações para cada personagem*/
+
+/*Aqua*/
+.container[class^="aqua"]{
+    border-bottom: 10px dotted blueviolet;
+}
+
+.box[class^="aqua"]{
+    background-color: aqua;
+}
+
+.item_titulo[class^="aqua"]{
+    background: linear-gradient(45deg, aqua, blueviolet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.item_desc[class^="aqua"] {
+    border: 2px solid aqua;
+    background-color: rgba(0, 255, 255, 0.5); /*RED GREEN BLUE OPACIDADE*/
+}
+
+/*Seth*/
+.container[class^="seth"]{
+    border-bottom: 10px dotted slateblue;
+}
+
+.box[class^="seth"]{
+    background-color: blueviolet;
+}
+
+.item_titulo[class^="seth"]{
+    background: linear-gradient(45deg, blueviolet, slateblue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.item_desc[class^="seth"] {
+    border: 2px solid blueviolet;
+    background-color: rgba(138, 43, 226, 0.5); /*RED GREEN BLUE OPACIDADE*/
+}
+
+/*Blue*/
 .container[class^="blue"]{
     border-bottom: 10px dotted aqua;
 }
@@ -99,7 +176,7 @@ body {
 }
 
 .item_titulo[class^="blue"]{
-    background: linear-gradient(45deg, slateblue, aqua);
+    background: linear-gradient(45deg, slateblue, gold);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -108,5 +185,71 @@ body {
 
 .item_desc[class^="blue"] {
     border: 2px solid slateblue;
-    background-color: rgba(106, 90, 205, 0.7); /*RED GREEN BLUE OPACIDADE*/
+    background-color: rgba(106, 90, 205, 0.5); /*RED GREEN BLUE OPACIDADE*/
+}
+
+/*Yellow*/
+.container[class^="yellow"]{
+    border-bottom: 10px dotted orange;
+}
+
+.box[class^="yellow"]{
+    background-color: gold;
+}
+
+.item_titulo[class^="yellow"]{
+    background: linear-gradient(45deg, gold, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.item_desc[class^="yellow"] {
+    border: 2px solid gold;
+    background-color: rgba(255, 215, 0, 0.5); /*RED GREEN BLUE OPACIDADE*/
+}
+
+/*Orange*/
+.container[class^="orange"]{
+    border-bottom: 10px dotted limegreen;
+}
+
+.box[class^="orange"]{
+    background-color: orange;
+}
+
+.item_titulo[class^="orange"]{
+    background: linear-gradient(45deg, orange, limegreen);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.item_desc[class^="orange"] {
+    border: 2px solid orange;
+    background-color: rgba(255, 165, 0, 0.5); /*RED GREEN BLUE OPACIDADE*/
+}
+
+/*Green*/
+.container[class^="green"]{
+    border-bottom: 10px dotted white;
+}
+
+.box[class^="green"]{
+    background-color: limegreen;
+}
+
+.item_titulo[class^="green"]{
+    background: linear-gradient(45deg, limegreen, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.item_desc[class^="green"] {
+    border: 2px solid limegreen;
+    background-color: rgba(50, 205, 50, 0.5); /*RED GREEN BLUE OPACIDADE*/
 }
