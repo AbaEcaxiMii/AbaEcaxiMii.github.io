@@ -34,18 +34,28 @@ body.pag_sobre_fundo {
   background-size: 100% auto;         /* 100% da largura, altura proporcional */
 }
 
-.links_logo{
-    font-family: deltarune_logo;
-}
-
-.blocos_flores{
-    margin-top: 50vw /*100vw = largura total da tela; 540/960 = 0.5625 -> a altura é 56.25% da largura, mas coloco um pouco menos para ficar mais bonito */
-}
-
 .titulo{
     font-family: deltarune_logo;
     color: darkslategray;
     text-align:center;
+}
+
+.links_logo{
+    font-family: deltarune_logo;
+}
+
+.texto_alinhado_centro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center; /* centraliza os itens dentro da caixa */
+  margin: 0 auto;          /* centraliza a caixa na página */
+  max-width: 800px;        /* limita a largura pra não esticar demais */
+  text-align:center;
+}
+
+.blocos_flores{
+    margin-top: 540px /*100vw = largura total da tela; 540/960 = 0.5625 -> a altura é 56.25% da largura, mas coloco um pouco menos para ficar mais bonito */
 }
 
 .titulo_simples{
@@ -118,6 +128,10 @@ body.pag_sobre_fundo {
 
 .box:hover .spr_special {
     display: block;
+}
+
+.nao_pode_equipar {
+    opacity: 0.5;
 }
 
 /*Variações para cada personagem*/
@@ -234,7 +248,7 @@ body.pag_sobre_fundo {
 
 /*Green*/
 .container[class^="green"]{
-    border-bottom: 10px dotted white;
+    border-bottom: 10px dotted yellow;
 }
 
 .box[class^="green"]{
@@ -242,7 +256,7 @@ body.pag_sobre_fundo {
 }
 
 .item_titulo[class^="green"]{
-    background: linear-gradient(45deg, limegreen, white);
+    background: linear-gradient(45deg, limegreen, yellow);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -252,4 +266,117 @@ body.pag_sobre_fundo {
 .item_desc[class^="green"] {
     border: 2px solid limegreen;
     background-color: rgba(50, 205, 50, 0.5); /*RED GREEN BLUE OPACIDADE*/
+}
+
+/*Flowery*/
+
+.box[class^="flowery"]{
+    background-color: yellow;
+}
+
+.item_titulo[class^="flowery"]{
+    background: linear-gradient(45deg, yellow, yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.item_desc[class^="flowery"] {
+    border: 2px solid yellow;
+    background-color: rgba(255, 255, 0, 0.5); /*RED GREEN BLUE OPACIDADE*/
+}
+
+
+/*Votação*/
+/*Oi professor eu sei que vc tá lendo isso, então eu quero confessar que eu odiei fazer essa merda de votação. no cmc foi simples né? só usar os forms e tá de boa mas ai eu pensei "ai isso é um trabalho né? não faz mal eu deixar um pouco mais bonito" e dessa forma eu gastei 3 horas da minha vida so nisso. TODA HORA eu via um efeito novo que eu queria implementar, mudava os parametros toda hora, ai as classes nãoq ueriam funcionar por algum motivo e eu to escrevendo isso na raicva pq DEU CERTO FINALEMETENAFNJBXVBNMJasckjhbadfkjhb. Enfim, não vou mais mexer nisso :)*/
+
+.votacao {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  text-align: center;
+  font-family: determination;
+}
+
+.votacao_pergunta {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.votacao_opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.opcao {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s;
+}
+
+.opcao:hover {
+  transform: scale(1.05);
+}
+
+.opcao input {
+  cursor: pointer;
+}
+
+.opcao:has(input:checked) {
+  outline: 3px solid yellow;
+  transform: scale(1.05);
+}
+
+.votacao_texto {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-family: determination;
+  font-size: 1em;
+  resize: vertical;
+  margin-bottom: 16px;
+}
+
+.votacao_botoes {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.votacao_botoes button {
+  padding: 10px 24px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-family: determination;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.votacao_botoes button:hover {
+  transform: scale(1.05);
+}
+
+.botao_reset {
+  background: gray;
+  color: white;
+}
+
+.botao_enviar {
+  background: linear-gradient(45deg, red, yellow);
+  color: white;
 }
