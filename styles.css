@@ -29,9 +29,9 @@ body.pag_sobre_fundo {
   margin: 0;
 
   background-image: url('imagens/sunrise-deltarune.960x540.gif');
-  background-repeat: repeat-y;        /* repete só na vertical */
-  background-position: top center;    /* começa no topo, centralizado */
-  background-size: 100% auto;         /* 100% da largura, altura proporcional */
+  background-repeat: repeat-y;/* repete só na vertical */
+  background-position: top center;
+  background-size: 100% auto;/* usa 100% da largura da pagina, altura proporcional */
 }
 
 .titulo{
@@ -47,29 +47,29 @@ body.pag_sobre_fundo {
 .texto_alinhado_centro {
   display: flex;
   align-items: center;
-  gap: 8px;
-  justify-content: center; /* centraliza os itens dentro da caixa */
-  margin: 0 auto;          /* centraliza a caixa na página */
-  max-width: 800px;        /* limita a largura pra não esticar demais */
+  gap: 8px;/*espaçamento entre elementos*/
+  justify-content: center;/* centraliza os itens dentro da caixa */
+  margin: 0 auto;/* centraliza a caixa na página */
+  max-width: 800px;/* limita a largura pra não esticar demais */
   text-align:center;
 }
 
 .blocos_flores{
-    margin-top: 540px /*100vw = largura total da tela; 540/960 = 0.5625 -> a altura é 56.25% da largura, mas coloco um pouco menos para ficar mais bonito */
+    margin-top: 540px /*esse é a largura da imagem sunrise, garante que os blocos com as flores só apareçam depois dessa imagem)*/
+/*100vw = largura total da tela; 540/960 = 0.5625 -> a altura é 56.25% da largura, mas coloco um pouco menos para ficar mais bonito */
 }
 
 .titulo_simples{
     font-family: determination;
     color: orange;
     text-align:center;
-    border-bottom: 10px dotted aqua;
+    border-bottom: 10px dotted aqua; /*Cria bolinhas bonitas*/
 }
 
 .container {
     display: flex;
-    align-items: stretch;
+    align-items: stretch; /*Vai esticar para caber todos os elementos*/
     gap: 16px;
-    padding: 10px;
 }
 
 .box {
