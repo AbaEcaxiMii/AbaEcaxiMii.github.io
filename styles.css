@@ -1,13 +1,11 @@
 @font-face {
     font-family: determination;
     src: url(fontes/DeterminationSansWebRegular-369X.ttf);
-
 }
 
 @font-face {
     font-family: deltarune_logo;
     src: url(fontes/deltarune.ttf);
-
 }
 
 body.pag_principal_fundo {
@@ -55,8 +53,7 @@ body.pag_sobre_fundo {
 }
 
 .blocos_flores{
-    margin-top: 540px /*esse é a largura da imagem sunrise, garante que os blocos com as flores só apareçam depois dessa imagem)*/
-/*100vw = largura total da tela; 540/960 = 0.5625 -> a altura é 56.25% da largura, mas coloco um pouco menos para ficar mais bonito */
+    margin-top: 45vw /*100vw = largura total da tela; 540/960 = 0.5625 -> a altura é 56.25% da largura, mas coloco um pouco menos para ficar mais bonito */
 }
 
 .titulo_simples{
@@ -70,6 +67,7 @@ body.pag_sobre_fundo {
     display: flex;
     align-items: stretch; /*Vai esticar para caber todos os elementos*/
     gap: 16px;
+    padding: 10px; /*Faz as bolinhas não ficarem coladas na no container*/
 }
 
 .box {
@@ -106,8 +104,8 @@ body.pag_sobre_fundo {
 
 .item {
     display: flex;
-    align-items: center; /* centraliza verticalmente a img e o texto */
-    gap: 8px;            /* espaço entre a imagem e o texto */
+    align-items: center;/* centraliza verticalmente a img e o texto */
+    gap: 8px;/* espaço entre a imagem e o texto */
 }
 
 .stats {
@@ -117,8 +115,7 @@ body.pag_sobre_fundo {
 }
 
 .box .spr_special {
-    display: none;
-     /* mantém a proporção */
+    display: none;/* mantém a proporção */
 }
 
 /* No hover, inverte */
@@ -289,7 +286,7 @@ body.pag_sobre_fundo {
 
 
 /*Votação*/
-/*Oi professor eu sei que vc tá lendo isso, então eu quero confessar que eu odiei fazer essa merda de votação. no cmc foi simples né? só usar os forms e tá de boa mas ai eu pensei "ai isso é um trabalho né? não faz mal eu deixar um pouco mais bonito" e dessa forma eu gastei 3 horas da minha vida so nisso. TODA HORA eu via um efeito novo que eu queria implementar, mudava os parametros toda hora, ai as classes nãoq ueriam funcionar por algum motivo e eu to escrevendo isso na raicva pq DEU CERTO FINALEMETENAFNJBXVBNMJasckjhbadfkjhb. Enfim, não vou mais mexer nisso :)*/
+/*Oi professor eu sei que vc tá lendo isso, então eu quero confessar que eu odiei fazer essa merda de votação. no cmc foi simples né? só usar os forms e tá de boa mas ai eu pensei "ai isso é um trabalho né? não faz mal eu deixar um pouco mais bonito" e dessa forma eu gastei 3 horas da minha vida só nisso. TODA HORA eu via um efeito novo que eu queria implementar, mudava os parametros toda hora, ai as classes nãoq ueriam funcionar por algum motivo e eu to escrevendo isso na raicva pq DEU CERTO FINALEMETENAFNJBXVBNMJasckjhbadfkjhb. Enfim, não vou mais mexer nisso :)*/
 
 .votacao {
   max-width: 800px;
@@ -342,12 +339,14 @@ body.pag_sobre_fundo {
   width: 100%;
   min-height: 100px;
   padding: 10px;
-  box-sizing: border-box;
+  box-sizing: border-box; /*faz com que o padding e a border de um elemento sejam incluídos dentro da largura e da altura que você definiu, em vez de aumentarem o tamanho final da caixa*/
   border: 2px solid black;
   border-radius: 8px;
-  font-family: determination;
-  font-size: 1em;
-  resize: vertical;
+
+  font-family: determination; /*Precisa readicionar a fonte para aparecer*/
+  font-size: 1em; /*Fica feito no tamanho natural*/
+
+  resize: vertical; /*Evita que o usuario mude o tamanho horizontal*/
   margin-bottom: 16px;
 }
 
@@ -358,12 +357,11 @@ body.pag_sobre_fundo {
 }
 
 .votacao_botoes button {
-  padding: 10px 24px;
+  padding: 10px 24px; /* vertical | horizontal */
   border: 2px solid black;
   border-radius: 8px;
   font-family: determination;
   font-size: 1em;
-  cursor: pointer;
   transition: transform 0.15s;
 }
 
