@@ -8,12 +8,13 @@
     src: url(fontes/deltarune.ttf);
 }
 
-body.pag_principal_fundo {
-  font-family: determination;
-  margin: 0;
-  font-size: 2em;
-  min-height: 100vh;
+body{
+    font-family: determination;
+    margin: 0;
+    font-size: 2em;
+}
 
+body.pag_principal_fundo {
   background-image:
     url('imagens/sunrise-deltarune.960x540.gif'),
     url('imagens/deltarune_background.gif');
@@ -24,13 +25,14 @@ body.pag_principal_fundo {
 }
 
 body.pag_sobre_fundo {
-  font-family: determination;
-  margin: 0;
-
   background-image: url('imagens/sunrise-deltarune.960x540.gif');
   background-repeat: repeat-y;/* repete só na vertical */
   background-position: top center;
   background-size: 100% auto;/* usa 100% da largura da pagina, altura proporcional */
+}
+
+.foto_sunrise{
+    min-height: 56.25vw;
 }
 
 .titulo{
@@ -48,12 +50,11 @@ body.pag_sobre_fundo {
   align-items: center; /* centraliza os itens dentro da caixa */
   gap: 8px;/*espaçamento entre elementos*/
   margin: 0 auto;/* centraliza a caixa na página */
-  max-width: 800px;/* limita a largura pra não esticar demais */
+  max-width: 80%;/* limita a largura pra não esticar demais */
   text-align:center;
 }
 
 .blocos_flores{
-    margin-top: 45vw; /*100vw = largura total da tela; 540/960 = 0.5625 -> a altura é 56.25% da largura, mas coloco um pouco menos para ficar mais bonito */
     width: 100%;
 }
 
@@ -66,18 +67,13 @@ body.pag_sobre_fundo {
 
 .container {
     display: flex;
-    align-items: stretch; /*Vai esticar para caber todos os elementos*/
-    width: 50%;
+    gap: 16px;
     padding: 10px; /*Faz as bolinhas não ficarem coladas na no container*/
-    margin-left: auto;  /* Margem automática à esquerda */
-    margin-right: auto; /* Margem automática à direita */
 }
 
 .box {
     margin: 10px;
     width: 150px;
-    margin-left: auto;  /* Margem automática à esquerda */
-    margin-right: auto; /* Margem automática à direita */
     background-color: blueviolet;
     display: flex;
     justify-content: center;
