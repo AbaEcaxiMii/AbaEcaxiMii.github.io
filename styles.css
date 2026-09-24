@@ -114,15 +114,17 @@ body.pag_sobre_fundo {
     margin: 0; /* tira a margem padrão do <p> */
 }
 
+/*Normalmente o spr_especial não aparece*/
 .box .spr_special {
     display: none;/* mantém a proporção */
 }
 
-/* No hover, inverte */
+/* Normalmente o spr_normal aparece, mas se sobre o mouse ele desaparece */
 .box:hover .spr_normal {
     display: none;
 }
 
+/*Quando está sobre o mouse o spr_especial aparece*/
 .box:hover .spr_special {
     display: block;
 }
