@@ -11,6 +11,7 @@
 body.pag_principal_fundo {
   font-family: determination;
   margin: 0;
+  font-size: 2em;
   min-height: 100vh;
 
   background-image:
@@ -44,16 +45,16 @@ body.pag_sobre_fundo {
 
 .texto_alinhado_centro {
   display: flex;
-  align-items: center;
+  align-items: center; /* centraliza os itens dentro da caixa */
   gap: 8px;/*espaçamento entre elementos*/
-  justify-content: center;/* centraliza os itens dentro da caixa */
   margin: 0 auto;/* centraliza a caixa na página */
   max-width: 800px;/* limita a largura pra não esticar demais */
   text-align:center;
 }
 
 .blocos_flores{
-    margin-top: 45vw /*100vw = largura total da tela; 540/960 = 0.5625 -> a altura é 56.25% da largura, mas coloco um pouco menos para ficar mais bonito */
+    margin-top: 45vw; /*100vw = largura total da tela; 540/960 = 0.5625 -> a altura é 56.25% da largura, mas coloco um pouco menos para ficar mais bonito */
+    width: 100%;
 }
 
 .titulo_simples{
@@ -66,14 +67,17 @@ body.pag_sobre_fundo {
 .container {
     display: flex;
     align-items: stretch; /*Vai esticar para caber todos os elementos*/
-    gap: 16px;
+    width: 50%;
     padding: 10px; /*Faz as bolinhas não ficarem coladas na no container*/
+    margin-left: auto;  /* Margem automática à esquerda */
+    margin-right: auto; /* Margem automática à direita */
 }
 
 .box {
     margin: 10px;
     width: 150px;
-    /* sem height */
+    margin-left: auto;  /* Margem automática à esquerda */
+    margin-right: auto; /* Margem automática à direita */
     background-color: blueviolet;
     display: flex;
     justify-content: center;
