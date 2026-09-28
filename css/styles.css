@@ -1,11 +1,11 @@
 @font-face {
     font-family: determination;
-    src: url(fontes/DeterminationSansWebRegular-369X.ttf);
+    src: url('../fontes/DeterminationSansWebRegular-369X.ttf');
 }
 
 @font-face {
     font-family: deltarune_logo;
-    src: url(fontes/deltarune.ttf);
+    src: url('../fontes/deltarune.ttf');
 }
 
 body{
@@ -16,8 +16,8 @@ body{
 
 body.pag_principal_fundo {
   background-image:
-    url('imagens/sunrise-deltarune.960x540.gif'),
-    url('imagens/deltarune_background.gif');
+    url('../imagens/sunrise-deltarune.960x540.gif'),
+    url('../imagens/deltarune_background.gif');
 
   background-repeat: no-repeat, repeat;
   background-position: top center, top left;
@@ -25,7 +25,7 @@ body.pag_principal_fundo {
 }
 
 body.pag_sobre_fundo {
-  background-image: url('imagens/sunrise-deltarune.960x540.gif');
+  background-image: url('../imagens/sunrise-deltarune.960x540.gif');
   background-repeat: repeat-y;/* repete só na vertical */
   background-position: top center;
   background-size: 100% auto;/* usa 100% da largura da pagina, altura proporcional */
