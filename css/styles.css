@@ -55,7 +55,7 @@ body.pag_sobre_fundo {
 }
 
 .blocos_flores{
-    width: 100%;
+    width: 100%;/*Usa toda a largura da pagina*/
 }
 
 .titulo_simples{
