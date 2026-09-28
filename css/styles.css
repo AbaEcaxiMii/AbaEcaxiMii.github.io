@@ -32,7 +32,7 @@ body.pag_sobre_fundo {
 }
 
 .foto_sunrise{
-    min-height: 56.25vw;
+    min-height: 56.25vw; /*540/960=0,5626, ou seja, a altura é 56.25% da altura, então dá para usar isso pra saber quando termina a foto */
 }
 
 .titulo{
@@ -67,7 +67,7 @@ body.pag_sobre_fundo {
 
 .container {
     display: flex;
-    gap: 16px;
+    gap: 16px;/*Distância entre a caixa com os personagens e a outra com as informações*/
     padding: 10px; /*Faz as bolinhas não ficarem coladas na no container*/
 }
 
@@ -76,9 +76,9 @@ body.pag_sobre_fundo {
     width: 150px;
     background-color: blueviolet;
     display: flex;
-    justify-content: center;
+    justify-content: center; /*Só funciona por causa do display: flex. Alinha os filhos no eixo principal (por padrão, horizontal). Aqui, centraliza os filhos horizontalmente dentro da caixa.*/
     align-items: center;
-    flex-shrink: 0;
+    flex-shrink: 0;/*Impede que o elemento encolha*/
     position: relative;
 }
 
@@ -96,7 +96,7 @@ body.pag_sobre_fundo {
 
 .item_titulo{
     background: linear-gradient(45deg,blueviolet,slateblue);
-    background-clip: text;
+    background-clip: text;/*define até onde o plano de fundo (seja uma cor ou uma imagem) de um elemento deve se estender dentro de sua caixa*/
     -webkit-background-clip: text; /* Recorta o fundo no formato das letras */
     -webkit-text-fill-color: transparent; /* Faz a cor padrão do texto sumir */
     color: transparent;
@@ -292,8 +292,8 @@ body.pag_sobre_fundo {
 
 .votacao {
   max-width: 800px;
-  margin: 40px auto;
-  padding: 24px;
+  margin: 40px auto;/*centralizar horizontalmente um elemento de largura definida*/
+  padding: 24px;/*espaço interno da caixa, entre a borda e o conteúdo*/
   text-align: center;
   font-family: determination;
 }
@@ -305,7 +305,7 @@ body.pag_sobre_fundo {
 
 .votacao_opcoes {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;/*(Acabou nem sendo usado, vou deixar aqui de qualquer forma) permite que os itens dentro de um contêiner flexível quebrem para a linha seguinte quando não houver mais espaço na linha atual*/
   justify-content: center;
   gap: 12px;
   margin-bottom: 20px;
@@ -315,12 +315,12 @@ body.pag_sobre_fundo {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 10px 16px;
+  padding: 10px 16px; /*Vertical Horizontal*/
   border: 2px solid black;
   border-radius: 8px;
   color: white;
   cursor: pointer;
-  user-select: none;
+  user-select: none;/*impede que o usuário destaque o texto de um elemento com o mouse ou teclado, ou seja, pra impedir que isso aconteça quando selecionar a opção*/
   transition: transform 0.15s;
 }
 
