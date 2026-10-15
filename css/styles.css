@@ -118,7 +118,7 @@ body.pag_sobre_fundo {
     display: none;/* mantém a proporção */
 }
 
-/* Normalmente o spr_normal aparece, mas se sobre o mouse ele desaparece */
+/* Normalmente o spr_normal aparece, mas se sobre o mouse ele desaparece pois não tem .box .spr_normal*/
 .box:hover .spr_normal {
     display: none;
 }
