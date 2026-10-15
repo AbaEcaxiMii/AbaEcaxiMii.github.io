@@ -99,7 +99,6 @@ body.pag_sobre_fundo {
     background-clip: text;/*define até onde o plano de fundo (seja uma cor ou uma imagem) de um elemento deve se estender dentro de sua caixa*/
     -webkit-background-clip: text; /* Recorta o fundo no formato das letras */
     -webkit-text-fill-color: transparent; /* Faz a cor padrão do texto sumir */
-    color: transparent;
 }
 
 .item {
